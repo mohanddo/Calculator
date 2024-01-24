@@ -11,6 +11,7 @@ body {
     height: 100vh;
     width: 100vw;
     margin: 0;
+    overflow: hidden;
 }
 
 .header {
@@ -71,11 +72,6 @@ input[type="range"]:hover {
     cursor: pointer;
 }
 
-input[type="range"]::-webkit-slider-thumb:hover {
-    cursor: pointer;
-    background-color: hsl(6, 100%, 50%);
-}
-
 label {
     font-family: 'League Spartan', sans-serif;
     font-weight: 700;
@@ -120,31 +116,17 @@ button {
     font-size: 30px;
 }
 
-.digits {
-    border-left-color: rgb(240, 240, 240);
-    border-top-color: rgb(240, 240, 240);
-    border-bottom-color: rgb(240, 240, 240);
+.digitsAndOperators {
+    border-color: rgb(240, 240, 240);
     color: hsl(221, 14%, 31%);
 }
 
-.digits:hover {
+.digitsAndOperators:hover {
     transition: 300ms;
     background-color: rgb(255, 255, 255, 0.8);
     cursor: pointer;
 }
 
-.operator {
-    border-left-color: rgb(240, 240, 240);
-    border-top-color: rgb(240, 240, 240);
-    border-bottom-color: rgb(240, 240, 240);
-    color: hsl(221, 14%, 31%);
-}
-
-.operator:hover {
-    transition: 300ms;
-    background-color: rgb(255, 255, 255, 0.8);
-    cursor: pointer;
-}
 
 .equale {  
     background-color: hsl(6, 63%, 50%);
@@ -162,23 +144,12 @@ button {
     cursor: pointer;
 }
 
-.Reset {
-    background-color: hsl(225, 21%, 49%);
-    border-left-color: hsl(225, 21%, 49%);
-    border-top-color: hsl(225, 21%, 49%);
-    border-bottom-color: hsl(224deg 64.63% 69.25%);
+#reset {
     grid-column-start: 1;
     grid-column-end: 3;
-    color: hsl(0, 0%, 100%);
 }
 
-.Reset:hover {
-    transition: 300ms;
-    background-color: hsl(225, 50%, 54%);
-    cursor: pointer;
-}
-
-.Del {
+.delAndReset {
     background-color: hsl(225, 21%, 49%);
     border-left-color: hsl(225, 21%, 49%);
     border-top-color: hsl(225, 21%, 49%);
@@ -186,8 +157,81 @@ button {
     color: hsl(0, 0%, 100%);
 }
 
-.Del:hover {
+.delAndReset:hover {
     transition: 300ms;
     background-color: hsl(225, 50%, 54%);
     cursor: pointer;
+}
+
+@media (max-width: 370px) {
+
+    .header {
+        width: 250px;
+    }
+
+    .keypad {
+        width: 250px;
+        grid-template-columns: 47px 47px 47px 47px;
+        gap: 12px;
+        padding: 12px 0 12px 12px;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+    }
+
+    input[type="text"] {
+        width: 250px;
+        font-size: 30px;
+    }
+    
+    
+}
+
+@media (max-height: 600px) {
+
+    #theme {
+        height: 20px;
+        margin-right: 15px;
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+    
+    #calc {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 10px;
+    }
+
+    .header {
+        width: 290px;
+        height: 34px;
+    }
+
+    .keypad {
+        width: 290px;
+        grid-template-columns: 60px 60px 60px 60px;
+        grid-template-rows: 40px 40px 40px 40px 40px;
+        padding: 10px 0 10px 10px;
+        gap: 10px;
+    }
+
+    button {
+        font-size: 24px;
+    }
+
+    input[type="text"] {
+        width: 290px;
+        height: 35px;
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+    
+    
 }

@@ -16,7 +16,7 @@
     <div class="flex">
       <p id="theme">THEME</p>
       <label for="range">123
-        <input type="range" min="1" max="3" id="range">
+        <input type="range" min="1" max="3" id="range" value="1">
       </label>
     </div>  
   </div>
@@ -24,26 +24,27 @@
   <input type="text" readonly>
 
   <div class="keypad">
-    <button type="button" class="digits">7</button>
-    <button type="button" class="digits">8</button>
-    <button type="button" class="digits">9</button>
-    <button type="button" class="Del">DEL</button>
-    <button type="button" class="digits">4</button>
-    <button type="button" class="digits">5</button>
-    <button type="button" class="digits">6</button>
-    <button type="button" class="operator">+</button>
-    <button type="button" class="digits">1</button>
-    <button type="button" class="digits">2</button>
-    <button type="button" class="digits">3</button>
-    <button type="button" class="operator">-</button>
-    <button type="button" class="operator">.</button>
-    <button type="button" class="digits">0</button>
-    <button type="button" class="operator">/</button>
-    <button type="button" class="operator">×</button>
-    <button type="button" class="Reset">RESET</button>
+    <button type="button" class="digitsAndOperators">7</button>
+    <button type="button" class="digitsAndOperators">8</button>
+    <button type="button" class="digitsAndOperators">9</button>
+    <button type="button" class="delAndReset">DEL</button>
+    <button type="button" class="digitsAndOperators">4</button>
+    <button type="button" class="digitsAndOperators">5</button>
+    <button type="button" class="digitsAndOperators">6</button>
+    <button type="button" class="digitsAndOperators">+</button>
+    <button type="button" class="digitsAndOperators">1</button>
+    <button type="button" class="digitsAndOperators">2</button>
+    <button type="button" class="digitsAndOperators">3</button>
+    <button type="button" class="digitsAndOperators">-</button>
+    <button type="button" class="digitsAndOperators">.</button>
+    <button type="button" class="digitsAndOperators">0</button>
+    <button type="button" class="digitsAndOperators">/</button>
+    <button type="button" class="digitsAndOperators">×</button>
+    <button type="button" class="delAndReset" id="reset">RESET</button>
     <button type="button" class="equale">=</button>
   </div>
   
-  <script src="js.js"></script>
+  <script src="calculator.js"></script>
+  <script src="theme.js"></script>
 </body>
 </html>
