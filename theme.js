@@ -13,7 +13,7 @@ let delAndreset = document.querySelectorAll(".delAndReset");
 let resetHover = document.querySelector(".Reset:hover");
 
 
-range.addEventListener('click', () => {
+range.addEventListener('input', () => {
     if (range.value == 1) {
         body.style.backgroundColor = "hsl(222, 26%, 31%)";
 

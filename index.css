@@ -11,6 +11,7 @@ body {
     height: 100vh;
     width: 100vw;
     margin: 0;
+    
 }
 
 .header {
@@ -56,6 +57,7 @@ input[type="range"] {
     border-radius: 20px;
     background-color: hsl(223, 31%, 20%);
     padding: 4px;
+    cursor: pointer;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -65,10 +67,6 @@ input[type="range"]::-webkit-slider-thumb {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-}
-
-input[type="range"]:hover {
-    cursor: pointer;
 }
 
 label {
