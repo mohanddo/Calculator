@@ -210,16 +210,16 @@ button {
     }
 
     .header {
-        width: 290px;
-        height: 34px;
+        width: 260px;
+        height: 30px;
     }
 
     .keypad {
-        width: 290px;
-        grid-template-columns: 60px 60px 60px 60px;
-        grid-template-rows: 40px 40px 40px 40px 40px;
-        padding: 10px 0 10px 10px;
-        gap: 10px;
+        width: 260px;
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-template-rows: 30px 30px 30px 30px 30px;
+        padding: 12px 0 12px 12px;
+        gap: 12px;
     }
 
     button {
@@ -227,10 +227,10 @@ button {
     }
 
     input[type="text"] {
-        width: 290px;
+        width: 260px;
         height: 35px;
         font-size: 24px;
-        margin-bottom: 14px;
+        margin-bottom: 8px;
     }
     
     
